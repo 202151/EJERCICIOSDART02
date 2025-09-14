@@ -1,15 +1,28 @@
-# 🎯 Ejercicios Dart - Guía de Ejecución
+# 🎯 Ejercicios Dart
 
-## 📋 Ejercicios Disponibles
+### Carpeta CONDICIONALES
+
+| # | Ejercicio | Descripción |
+|---|-----------|-------------|
+| 1️⃣ | **Número Par o Impar** | Determina si un número es par o impar |
+| 2️⃣ | **Clasificación de Notas** | Clasifica notas en Excelente, Aprobado o Desaprobado |
+| 3️⃣ | **Ejer03** | Ejercicio de condicionales |
+| 4️⃣ | **Ejer04** | Ejercicio de condicionales |
+| 5️⃣ | **Ejer05** | Ejercicio de condicionales |
+| 6️⃣ | **Ejer06** | Ejercicio de condicionales |
+| 7️⃣ | **Ejer07** | Ejercicio de condicionales |
+| 8️⃣ | **Ejer08** | Ejercicio de condicionales |
+
+### Carpeta ESTRUCTURA_REPETITIVA
 
 | # | Ejercicio | Descripción |
 |---|-----------|-------------|
 | 1️⃣ | **Tabla de Multiplicar** | Genera tabla del 1 al 12 para cualquier número |
 | 2️⃣ | **Suma 1 al N** | Calcula suma acumulativa con verificación |
-| 3️⃣ | **Pares e Impares** | Separa números en dos categorías |
-| 4️⃣ | **Vigilante** | Simula ronda de seguridad (8 puertas) |
-| 5️⃣ | **Supermercado** | Sistema de carrito de compras |
-| 6️⃣ | **Biblioteca** | Registro de préstamos de libros |
+| 3️⃣ | **Ejercicio03** | Ejercicio de estructuras repetitivas |
+| 4️⃣ | **Ejercicio04** | Ejercicio de estructuras repetitivas |
+| 5️⃣ | **Ejercicio05** | Ejercicio de estructuras repetitivas |
+| 6️⃣ | **Ejercicio06** | Ejercicio de estructuras repetitivas |
 
 ## 🚀 Ejecución Rápida
 
@@ -39,34 +52,46 @@ dart --version
 # Navegar al directorio bin donde están los archivos
 cd bin
 
-# Ejecutar cualquier ejercicio directamente
-.\dart.exe ejercicio01.dart
-.\dart.exe ejercicio02.dart
-.\dart.exe ejercicio03.dart
-.\dart.exe ejercicio04.dart
-.\dart.exe ejercicio05.dart
-.\dart.exe ejercicio06.dart
+# Ejecutar ejercicios de CONDICIONALES
+.\dart.exe CONDICIONALES\Ejer01.dart
+.\dart.exe CONDICIONALES\Ejer02.dart
+.\dart.exe CONDICIONALES\Ejer03.dart
+# ... y así sucesivamente
+
+# Ejecutar ejercicios de ESTRUCTURA_REPETITIVA
+.\dart.exe ESTRUCTURA_REPETITIVA\ejercicio01.dart
+.\dart.exe ESTRUCTURA_REPETITIVA\ejercicio02.dart
+.\dart.exe ESTRUCTURA_REPETITIVA\ejercicio03.dart
+# ... y así sucesivamente
 ```
 
 #### En otros sistemas (Linux/macOS)
 ```bash
-# Ejecutar cualquier ejercicio directamente
-dart ejercicio01.dart
-dart ejercicio02.dart
-dart ejercicio03.dart
-dart ejercicio04.dart
-dart ejercicio05.dart
-dart ejercicio06.dart
+# Ejecutar ejercicios de CONDICIONALES
+dart CONDICIONALES/Ejer01.dart
+dart CONDICIONALES/Ejer02.dart
+dart CONDICIONALES/Ejer03.dart
+# ... y así sucesivamente
+
+# Ejecutar ejercicios de ESTRUCTURA_REPETITIVA
+dart ESTRUCTURA_REPETITIVA/ejercicio01.dart
+dart ESTRUCTURA_REPETITIVA/ejercicio02.dart
+dart ESTRUCTURA_REPETITIVA/ejercicio03.dart
+# ... y así sucesivamente
 ```
 
 ## 💡 Ejemplos de Salida
 
 <details>
-<summary>🧮 Ejercicio 1 - Tabla de Multiplicar</summary>
+<summary>🧮 Ejercicio 1 - Tabla de Multiplicar (ESTRUCTURA_REPETITIVA)</summary>
 
 ```
-Entrada: 7
-Salida:
+=== EJERCICIO 1: TABLA DE MULTIPLICAR PERSONALIZADA ===
+Ingrese un número para mostrar su tabla de multiplicar del 1 al 12:
+7
+
+Tabla de multiplicar del 7:
+═════════════════════════════
 7 × 1 = 7
 7 × 2 = 14
 ...
@@ -75,14 +100,13 @@ Salida:
 </details>
 
 <details>
-<summary>🛒 Ejercicio 5 - Supermercado</summary>
+<summary>🔢 Ejercicio 1 - Número Par o Impar (CONDICIONALES)</summary>
 
 ```
-Producto #1: Pan → $2.50
-Producto #2: Leche → $3.75
-Producto #3: 0 (terminar)
-
-TOTAL GASTADO: $6.25
+=== EJERCICIO 1: NÚMERO PAR O IMPAR ===
+Ingresa un número entero:
+8
+El número 8 es PAR
 ```
 </details>
 
@@ -95,22 +119,28 @@ TOTAL GASTADO: $6.25
 
 **❌ Error de permisos (Linux/macOS)**
 ```bash
-chmod +x ejercicio*.dart
+chmod +x CONDICIONALES/*.dart ESTRUCTURA_REPETITIVA/*.dart
 ```
 
 **❌ Entrada inválida**
 - Los programas validan automáticamente y muestran mensajes de ayuda
 
-## 📁 Archivos del Proyecto
+## 📁 Estructura del Proyecto
 ```
-ejercicios-dart/
-├── ejercicio1.dart    # Tabla multiplicar
-├── ejercicio2.dart    # Suma 1 al N  
-├── ejercicio3.dart    # Pares/impares
-├── ejercicio4.dart    # Vigilante
-├── ejercicio5.dart    # Supermercado
-├── ejercicio6.dart    # Biblioteca
-└── README.md          # Esta guía
+dart-sdk/
+├── bin/
+│   ├── CONDICIONALES/
+│   │   ├── Ejer01.dart    # Número par o impar
+│   │   ├── Ejer02.dart    # Clasificación de notas
+│   │   ├── Ejer03.dart    # ...
+│   │   └── ...
+│   ├── ESTRUCTURA_REPETITIVA/
+│   │   ├── ejercicio01.dart    # Tabla de multiplicar
+│   │   ├── ejercicio02.dart    # Suma 1 al N
+│   │   ├── ejercicio03.dart    # ...
+│   │   └── ...
+│   └── dart.exe           # Ejecutable de Dart
+└── README.md              # Esta guía
 ```
 
 ---
@@ -118,10 +148,14 @@ ejercicios-dart/
 En Windows (PowerShell), ejecuta:
 ```powershell
 cd bin
-.\dart.exe ejercicio01.dart
+.\dart.exe CONDICIONALES\Ejer01.dart
+# o
+.\dart.exe ESTRUCTURA_REPETITIVA\ejercicio01.dart
 ```
 
 En otros sistemas, ejecuta:
 ```bash
-dart ejercicio01.dart
+dart CONDICIONALES/Ejer01.dart
+# o
+dart ESTRUCTURA_REPETITIVA/ejercicio01.dart
 ```
